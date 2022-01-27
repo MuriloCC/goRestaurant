@@ -9,7 +9,7 @@ import { Feather } from '@expo/vector-icons';
 const { Navigator, Screen } = createBottomTabNavigator();
 
 
-export function Routes () {
+export function AuthRoutes () {
   return (
     <Navigator 
       initialRouteName="Listagem"
