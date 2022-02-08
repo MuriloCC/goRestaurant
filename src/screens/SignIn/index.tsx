@@ -4,6 +4,7 @@ import LogoImg from '../../assets/logo.png'
 import BackgroundImg from '../../assets/simbolo.png'
 import GoRestaurantImg from '../../assets/GoRestaurant.png'
 import { Ionicons } from '@expo/vector-icons'
+import { theme } from "../../global/styles";
 
 function SignIn () {
   return (
@@ -18,12 +19,12 @@ function SignIn () {
         </View>
 
         <Text style={styles.bodyText}>Uma verdadeira experiência Italiana.</Text>
-        <TouchableOpacity style={styles.loginButton}>
+        <TouchableOpacity activeOpacity={0.7} style={styles.loginButton}>
           <View style={styles.buttonText}>
-            <Text>Entrar no restaurante</Text>
+            <Text style={styles.buttonTitle}>Entrar no restaurante</Text>
           </View>
           <View style={styles.buttonIcon}>
-            <Ionicons name="enter-outline" size={32} color="black" />
+            <Ionicons name="enter-outline" size={32} color={theme.colors.darkRed}/>
           </View>
         </TouchableOpacity>
       </View>

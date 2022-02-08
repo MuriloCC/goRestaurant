@@ -8,15 +8,15 @@ export const styles = StyleSheet.create({
   },
 
   topSection: {
-    paddingHorizontal: 52,
+    paddingHorizontal: 40,
     width: '100%',
   },
 
   logoContainer: {
     width: '100%',
     position: 'absolute',
-    left: 52,
-    bottom: 350
+    left: 40,
+    bottom: 400
   },
 
   logoImage: {
@@ -28,7 +28,8 @@ export const styles = StyleSheet.create({
   },
 
   logoTitle: {
-    fontSize: 14
+    fontSize: 16,
+    color: '#FFB1B1'
   },
 
   bodyText: {
@@ -42,16 +43,26 @@ export const styles = StyleSheet.create({
     width: '100%',
     flexDirection: "row",
     alignItems: 'center',
-    justifyContent: 'space-between',
-    backgroundColor: theme.colors.darkYellow
+    justifyContent: 'space-around',
+    backgroundColor: theme.colors.darkYellow,
+    borderRadius: 8
   },
 
   buttonText: {
-    width: '90%',
-    alignItems: 'center'
+    width: '80%',
+    alignItems: 'center',
+  },
+
+  buttonTitle: {
+    fontSize: 15,
+    fontWeight: 'bold',
+    color: theme.colors.darkRed
   },
 
   buttonIcon: {
-    backgroundColor: theme.colors.lightYellow
+    backgroundColor: theme.colors.lightYellow,
+    padding: 14,
+    borderTopRightRadius: 8,
+    borderBottomEndRadius: 8
   }
 })
