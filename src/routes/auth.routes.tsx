@@ -8,7 +8,6 @@ import { Feather } from '@expo/vector-icons';
 
 const { Navigator, Screen } = createBottomTabNavigator();
 
-
 export function AuthRoutes () {
   return (
     <Navigator 

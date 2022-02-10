@@ -1,11 +1,12 @@
 import { NavigationContainer } from '@react-navigation/native'
 import { AuthRoutes } from './src/routes/auth.routes';
-import SignIn from './src/screens/SignIn';
+import 'react-native-gesture-handler'
+import { Routes } from './src/routes/index.routes';
 
 export default function App() {
   return (
     <NavigationContainer>
-      <SignIn />
+      <Routes />
     </NavigationContainer>
   );
 }

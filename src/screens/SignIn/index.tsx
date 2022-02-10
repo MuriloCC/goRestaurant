@@ -6,7 +6,7 @@ import GoRestaurantImg from '../../assets/GoRestaurant.png'
 import { Ionicons } from '@expo/vector-icons'
 import { theme } from "../../global/styles";
 
-function SignIn () {
+function SignIn ({ navigation }: any) {
   return (
     <View style={styles.container} >
       <Image source={BackgroundImg} />
@@ -19,7 +19,11 @@ function SignIn () {
         </View>
 
         <Text style={styles.bodyText}>Uma verdadeira experiência Italiana.</Text>
-        <TouchableOpacity activeOpacity={0.7} style={styles.loginButton}>
+        <TouchableOpacity
+          activeOpacity={0.7} 
+          style={styles.loginButton}
+          onPress={() => navigation.navigate('auth routes')}
+        >
           <View style={styles.buttonText}>
             <Text style={styles.buttonTitle}>Entrar no restaurante</Text>
           </View>
